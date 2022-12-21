@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --ff-timer: 'Roboto', sans-serif;
+  --primary-color: #323238;
+  --bg-color: #ffffff;
+  --bg-card: #e1e1e6;
+  --content-card: #323238;
+  --bg-selected-card: #02799d;
+  --content-selected-card: #ffffff;
+}
+
+.dark-mode {
+  --primary-color: #ffffff;
+  --bg-color: #121214;
+  --bg-card: #29292e;
+  --content-card: #c4c4cc;
+  --bg-selected-card: #0c3d4e;
+  --content-selected-card: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color);
+  min-width: 100vw;
+  display: grid;
+}
+
+main {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  grid-gap: 19.2rem;
+  padding: 0 4rem;
+}
+
+.theme {
+  position: fixed;
+
+  top: 6.4rem;
+  right: 6.4rem;
+  transition: transform 0.2s;
+}
+
+.theme:active {
+  transform: scale(1.1);
+}
+
+.hide {
+  display: none;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.timer {
+  display: flex;
+  font-family: var(--ff-timer);
+  color: var(--primary-color);
+  font-size: 12.2rem;
+  line-height: 14.8rem;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.controls button svg path {
+  fill: var(--content-card);
+}
+
+.controls button:active {
+  transform: scale(1.1);
+}
+
+/* cards */
+.card-wrapper {
+  display: grid;
+  grid-template-areas: 'A B' 'C D';
+  grid-gap: 3.2rem;
+}
+
+#forestSound {
+  grid-area: A;
+}
+
+#rainSound {
+  grid-area: B;
+}
+
+#coffeeShopSound {
+  grid-area: C;
+}
+
+#fireplaceSound {
+  grid-area: D;
+}
+
+.card-wrapper button svg path:nth-child(1) {
+  transition: all 0.2s ease-in;
+  opacity: 1;
+  fill: var(--bg-card);
+}
+.card-wrapper svg path:nth-child(2) {
+  transition: all 0.2s ease-in;
+  fill: var(--content-card);
+}
+
+/* selected card */
+.card-wrapper .selected path:nth-child(1) {
+  fill: var(--bg-selected-card);
+}
+.card-wrapper .selected path:nth-child(2) {
+  fill: var(--content-selected-card);
+}
+.card-wrapper button:active {
+  cursor: progress;
+}
+
+.card {
+  max-width: 13.8rem;
+  max-height: 15.2rem;
+}
+
+.card input {
+  position: relative;
+
+  max-width: 9rem;
+
+  bottom: 3.5rem;
+  left: 2.3rem;
+}
+
+.card input[type='range']::-webkit-slider-runnable-track {
+  background: var(--content-card);
+  height: 0.4rem;
+  cursor: pointer;
+}
+
+.selected input[type='range']::-webkit-slider-runnable-track {
+  background: var(--content-selected-card);
+}
+
+.card input[type='range']::-webkit-slider-thumb {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: -0.6rem;
+}
+
+.card input[type='range']::-webkit-slider-thumb:active {
+  cursor: grabbing;
+}
