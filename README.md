@@ -11,5 +11,5 @@ Projeto de um Cronômetro para estudo, criado a partir de um layout do FIGMA, ap
     
 ## 🔗 Link do Projeto
 ### Clique na imagem abaixo para abrir o projeto!
-[![page](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSModCKusy7bToHrB2oGB8YDPmshPYKkVcrZw&usqp=CAU)](https://carloslonghi.github.io/FocusTimer2.0-DarkMode/)
+[![page](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSModCKusy7bToHrB2oGB8YDPmshPYKkVcrZw&usqp=CAU)](https://carloslonghi.github.io/Focus-Timer-Ambience/)
 
