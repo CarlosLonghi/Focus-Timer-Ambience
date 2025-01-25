@@ -1,5 +1,5 @@
 
-# Focus Timer Dark Mode
+# Focus Timer Ambience
 Projeto de um Cronômetro para estudo, criado a partir de um layout do FIGMA, apresentado em um Desafio do curso Explore da RocketSeat. Neste desafio foi utilizado: HTML, CSS e JavaScript.
 
 - Nele pude aprender conceitos do JS como: 
